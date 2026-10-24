@@ -1,0 +1,15 @@
+The hardest part of this project wasn't the math.
+
+Mainly it was fighting the discrete grid of Minecraft. Because A mathematical curve is infinitely thin, but a Minecraft block is 1x1x1. If the spirograph loops overlap at a distance smaller than one block, the render fails completely.
+
+You can see this in my first attempt where you can barely make out a shape.
+
+(FirstTryFourier.png)
+
+The parameters were too small for the block resolution. The overlapping loops merged into a solid, unreadable mass of wool. 
+
+To fix this, I had to scale up the radii (R, r, and p) so the distance between adjacent loops was strictly greater than 1 block. I also adjusted the step size so the points were sampled frequently enough to form a continuous line, but not so frequently that they filled the interior.
+
+(FourierSuccess.png)
+
+Once the geometry was scaled to match the resolution of the grid, the curves became clean and distinct.

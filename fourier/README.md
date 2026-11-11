@@ -39,8 +39,4 @@ python fourier_patterns.py
 
 The script uses only the standard library. The password is in `MinecraftRCON.__init__`. The froglight blocks need Minecraft 1.19 or newer. See the [main README](../README.md#setup) for the RCON setup.
 
-## Files
 
-- `fourier_patterns.py`: the generator
-- `grid-resolution-problem.md`: the write-up on fitting curves to a block grid
-- `FirstTryFourier.png`, `FourierSuccess.png`: before and after screenshots

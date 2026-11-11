@@ -1,6 +1,6 @@
 # Math Notes
 
-Math that came up alongside the Minecraft projects, with no code.
+General Math proofs I was working on that I thought were pretty cool.
 
 ## Coupled generating functions
 
@@ -13,3 +13,7 @@ and turn their generating functions $A(x)$ and $B(x)$ into a pair of ordinary al
 $$\begin{bmatrix} 1 - px & -qx \\ -rx & 1 - sx \end{bmatrix} \begin{bmatrix} A \\ B \end{bmatrix} = \begin{bmatrix} a_0 \\ b_0 \end{bmatrix}$$
 
 [`handwritten-notes.jpg`](handwritten-notes.jpg) is the original handwritten version, including a couple of follow-up questions (triangular numbers and exponential generating functions).
+
+## Optimal angle for pulling a block
+
+[`optimal-pull-angle.md`](optimal-pull-angle.md) uses calculus to find the angle that gives a block the largest acceleration when you pull it at an angle against friction. The answer is $\theta = \tan^{-1}(\mu)$. The handwritten original is [`optimal-angle-handwritten.jpg`](optimal-angle-handwritten.jpg).

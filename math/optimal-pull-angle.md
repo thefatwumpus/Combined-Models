@@ -46,13 +46,4 @@ $$\boxed{\theta = \tan^{-1}(\mu)}$$
 
 The best angle depends only on the friction coefficient. It doesn't depend on the mass or on how hard you pull.
 
-## Extra checks
 
-*(These were not in the handwritten page.)*
-
-- **It's a maximum.** The second derivative of the numerator is $-F_{app}\cos\theta - \mu F_{app}\sin\theta$, which is negative for $0^\circ < \theta < 90^\circ$.
-- **The best acceleration.** At $\theta = \tan^{-1}(\mu)$ we have $\cos\theta = 1/\sqrt{1+\mu^2}$ and $\sin\theta = \mu/\sqrt{1+\mu^2}$, so
-  $$a_{max} = \frac{F_{app}\sqrt{1+\mu^2} - \mu m g}{m}$$
-  This is only an acceleration if the pull is strong enough to move the block, which means $F_{app}\sqrt{1+\mu^2} > \mu m g$.
-- **The block must stay on the ground.** The model needs $F_N \ge 0$, so $F_{app}\sin\theta \le mg$. If you pull hard enough to lift the block, the friction formula no longer applies.
-- **Numerical check.** For $F_{app} = 10$ N, $m = 5$ kg, $\mu = 0.3$, a brute-force search over angles finds the best angle at $16.70^\circ$, and $\tan^{-1}(0.3) = 16.70^\circ$. It also matches for $\mu = 0.1$ ($5.71^\circ$), $0.5$ ($26.57^\circ$) and $1.0$ ($45^\circ$).

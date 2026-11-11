@@ -25,7 +25,7 @@ The script waits for you to press Enter between patterns, and later patterns dra
 
 ## The hard part
 
-The math was easy. The hard part was fitting it to Minecraft's grid, because a block is 1 × 1 × 1 and a curve is infinitely thin. If two loops come closer than one block, they merge into a solid mass. The first attempt was unreadable for that reason, and the fix was scaling up the radii and tuning the step size. The full story is in [`grid-resolution-problem.md`](grid-resolution-problem.md).
+The math was not too bad. The hard part was fitting it to Minecraft's grid, because a block is 1 × 1 × 1 and a curve is infinitely thin. If two loops come closer than one block, they merge into a solid mass. The first attempt was unreadable for that reason, and the fix was scaling up the radii and tuning the step size. The full story is in [`grid-resolution-problem.md`](grid-resolution-problem.md).
 
 | First attempt | After scaling to the grid |
 |---|---|
